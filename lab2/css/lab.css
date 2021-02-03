@@ -27,10 +27,10 @@ p, ul, li {
 img {
     width: 400px;
     float: right;
-    margin: 10px;
     border-width: 20px;
     border-color: white;
     border-style: solid;
+    margin-bottom: 50px;
 }
 
 div#header
@@ -42,5 +42,11 @@ div#header
 
 main
 {
-  margin: 20px;
+  margin: 10px;
+  margin-left: 0px;
+  border-style: dotted;
+  border-color: #A8B499;
+  border-width: 20px;
+  padding: 50px;
+  width: 800px;
 }
