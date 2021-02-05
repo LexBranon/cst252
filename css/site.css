@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+
+body {
+    background-color: #fef6e9;
+    display: block;
+    color: black;
+    line-height: 30px;
+}
+
+h1, h2 {
+  font-family: 'Forum', cursive;
+  font-weight: normal;
+  font-size:120px;
+  display: block;
+}
+
+h3 {
+  font-family: 'Forum', cursive;
+  font-weight: normal;
+  display: block;
+  font-size: 25px;
+}
+
+p, ul, li {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 650px;
+}
+
+
+#bighead img {
+  width: 100%;
+}
+
+#content img {
+    width: 25%;
+    float: right;
+}
+
+#labs {
+  background-color: #f7ecd9;
+  padding: 20px;
+}
+
+main
+{
+  margin: 10px;
+  padding: 50px;
+}
+
+.row {
+  align-items: center;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  float: right;
+  width: 25%;
+  padding: 25px;
+  margin: 15px;
+  height: 550px;
+
+}
+
+.column img {
+  width: 100%;
+}
+
+.bottomnav {
+  background-color: #A8B499;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  word-spacing: 35px;
+  height: 25px;
+}
+
+.bottomnav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bottomnav a:hover {
+  background-color: #A8B499;
+}
+
+.bottomnav a.active {
+  background-color: #A8B499;
+}
