@@ -7,19 +7,19 @@
 console.log("Arrays and Objects")
 
 
-// Declare variables to hold the make, model, color, and year of your vehicle, example, var year = 2004
-var make = "Chevy";
-var model = "Spark";
-var year = 2019;
-var color = "grey";
-var extras = "small and cute";
+myTransport = ["Honda CRV",  "Chevy Spark", "longboard"];
 
-// Use document.writeln() to neatly output each of your variables, example, document.writeln("Make: " + make + "<br>");
-document.writeln("Make: " + make + "<br>");
-document.writeln("Model: " + model + "<br>");
-document.writeln("Extras: " + extras + "<br>");
-document.writeln("Year: " + year + "<br>");
-document.writeln("Age: " + age + "<br>");
+myMainRide = {
+    make: "Chevy",
+    model : "Spark",
+    color : "grey",
+    year : 2019,
+    age : function() {
+        return 2021 - this.year;
+    }
+}
 
+document.writeln("Kinds of transportion I use: ", myTransport, "</br>");
 document.writeln("My Main Ride: <pre>",
     JSON.stringify(myMainRide, null, '\t'), "</pre>");
+document.writeln("The age of my ", myMainRide.model, " is ", myMainRide.age(), " years.");
