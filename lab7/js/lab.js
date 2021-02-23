@@ -11,5 +11,5 @@ function nameEntry() {
   document.writeIn("Your name sorted:" + sortedName + "</br></br>");
   var randomName = randomizeName(userName);
     document.writeln("Your name randomized:<br>Do you like your new name?");
-    document.writeln("<div class='name'>" + randomName + "</div
+    document.writeln("<div class='name'>" + randomName + "</div>"")
   }
