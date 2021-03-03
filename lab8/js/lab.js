@@ -24,3 +24,6 @@ array.map(sqr);
 (4) [4, 25, 100, 10000]
 
 console.log ("sqr", result);
+var newEl = document.createElement("p");
+newEl.innerHTML = "sqr" + JSON.stringify(array);
+outputEl.appendChild(newEl);
