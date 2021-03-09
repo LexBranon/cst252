@@ -1,6 +1,6 @@
-// lab10.js - Functions
+// lab11.js - Functions
 // Author: Lexi Branon
-// Created: March 7, 2021
+// Created: March 9, 2021
 // License: Public Domain
 
 //Borrow the sort() function or my anagram() function from Lab 7.
