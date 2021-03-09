@@ -9,7 +9,7 @@ function sortingHat(name) {
    console.log("length:", len);
 
    var mod = len % 4;
-   console.log("mod:", mod");
+   console.log("mod:", mod);
 
    if(mod == 0) {
      return("Gryffindor");
