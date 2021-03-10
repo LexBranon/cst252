@@ -16,7 +16,7 @@ function sortingHat(name) {
    } else if (mod == 1){
      return("Ravenclaw");
    } else if (mod == 2){
-     return("Syltherine");
+     return("Slytherine");
    } else {
      return("Hufflepuff");
    }
