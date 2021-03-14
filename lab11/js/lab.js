@@ -24,13 +24,8 @@ function sortingHat(name) {
 
 
 // find the button element
-//var myButton = document.getElementById("button");
-// get value from input field
-// var name = document.getElementById("input").value;
  var name = document.getElementById("text");
-//get outputEl
- //var outputEl = document.getElementById("output");
-//console.log("output element:", outputEl);
+
 //call sorting house
 var sortHouse = sortingHat(name);
 console.log(sortHouse);
