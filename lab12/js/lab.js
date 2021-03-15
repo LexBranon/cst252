@@ -1,6 +1,6 @@
-// lab11.js - Functions
+// lab12.js - Functions
 // Author: Lexi Branon
-// Created: March 9, 2021
+// Created: March 15, 2021
 // License: Public Domain
 
 //Create a "FizzBuzz" function similar to how we did in class.
