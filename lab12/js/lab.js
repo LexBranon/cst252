@@ -3,45 +3,40 @@
 // Created: March 9, 2021
 // License: Public Domain
 
-//Borrow the sort() function or my anagram() function from Lab 7.
-function sortingHat(name) {
-   var len = name.length;
-   console.log("length:", len);
+//Create a "FizzBuzz" function similar to how we did in class.
+//Loop through numbers 1 to 200, listing them as you go
+//If the number is a multiple of 3, if should print "Fizz!"
+//If the number is a multiple of 5, it should print "Buzz!"
+//If the number is a multiple of 7, it should print "Boom!"
+//If the number is a multiple of more than one 3, 5 or 7, it should combine
+//Fizz, Buzz, and Boom. For example, if the number is a multiple of 3 AND 5
+//it should print "FizzBuzz!" and so on.
 
-   var mod = len % 4;
-   console.log("mod:", mod);
-
-   if(mod == 0) {
-     return("Gryffindor");
-   } else if (mod == 1){
-     return("Ravenclaw");
-   } else if (mod == 2){
-     return("Slytherine");
-   } else {
-     return("Hufflepuff");
-   }
+for (i=1; i<= 200; i++){
+  if (i%15 == 0) {
+    console.log("FizzBuzz!");
+} else if (i%21 == 0) {
+    console.log("FizzBoom!");
+} else if (i%35 == 0) {
+    console.log("BuzzBoom!");
+} else if (i%3 == 0){
+    console.log("Fizz!");
+} else if (i%5 == 0) {
+    console.log("Buzz!");
+} else if (i%7 == 0) {
+    console.log("Boom!");
+  }
 }
 
 
-// find the button element
- var name = document.getElementById("text");
-
-//call sorting house
-var sortHouse = sortingHat(name);
-console.log(sortHouse);
+str += "Fizz";
+var newEl = document.createElement("p");
+newEl.innerHTML = str;
+document.getElementById("output").appendChild(newEl);
 
 
-//Create an event listener attached to #button
-//that gets the value of #input and assigns it to a variable name
-//runs sortingHat(name) and stores the result in a variable house
-//appends a new styled paragraph to #output that says "The Sorting Hat has sorted you into " + house
-var myButton = document.getElementById("button");
-
-myButton.addEventListener("click", function (){
-//  var name = inputEl.value;
-  var name = document.getElementById("input").value;
-  console.log("name", )
-  var house = sortingHat(name);
-  newText = "<p> Congrats! Your House is... </p>"  + house;
-document.getElementById("output").innerHTML = newText;
-})
+function outputToPage(str) {
+    newEl = document.createElement("p");
+    newEl.innerHTML = str;
+    outputEl.appendChild(newEl);
+}
