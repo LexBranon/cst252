@@ -52,20 +52,7 @@ main
   align-items: center;
 }
 
-.column {
-  flex: 1;
-  padding: 10px;
-  float: right;
-  width: 25%;
-  padding: 25px;
-  margin: 15px;
-  height: 550px;
 
-}
-
-.column img {
-  width: 100%;
-}
 
 .bottomnav {
   background-color: #A8B499;
