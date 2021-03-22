@@ -3,16 +3,43 @@
 // Created: March 7, 2021
 // License: Public Domain
 
-//Borrow the sort() function or my anagram() function from Lab 7.
-function randomizeName(userName) {
-    var nameArray = userName.toLowerCase().split("");
-    console.log("nameArray =", nameArray);
-    var shuffledArray = shuffleArray(nameArray);
-    console.log("shuffledArray =", shuffledArray);
-    var shuffledString = shuffledArray.join("");
-    var newName = toTitleCase(shuffledString);
-    return newName;
+// shuffleArray - take an array and shuffle the contents
+// Thanks to https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffleArray(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
 }
+
+// sortUserName - a function that takes user input and sorts the letters
+// of their name
+function reorderUserName(word) {
+    var wordArray = word.toLowerCase().split('');
+    var newArray = shuffleArray(wordArray);
+    return newArray.join('');
+}
+
+// given a string, return string in Title Case
+// thanks to https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
+function toTitleCase(str) {
+    return str.replace(
+        /\w\S*/g,
+        function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
+}
+
 
 // find the button element
 buttonEl = document.getElementById("my-button");
@@ -21,21 +48,15 @@ console.log("button element:", buttonEl);
 inputEl = document.getElementById("user-name");
 console.log("input element:", inputEl);
 // find output element
- var outputEl = document.getElementById("output");
+outputEl = document.getElementById("output");
 console.log("output element:", outputEl);
 
-//Attach an event listener to your button that does the following:
-//Gets the value of your input field
-//Runs that value through your sort() or anagram() function and saves the results.
-//Replaces the html in <div id=output> with the results.
-var buttonEl = document.getElementById("my-input");
-console.log("My Input", inputEl);
-
-var inputEl = document.getElementById("my-button");
-console.log("My Button", buttonEl);
-
-buttonEl.addEventListener("click", function (){
-  var name = inputEl.value;
+// add an event listener to button
+buttonEl.addEventListener("click", function(){
+  // get value from name element
+  var userName = inputEl.value;
+  // modify value - either sort or shuffle
   var newName = toTitleCase(reorderUserName(userName));
+  // put value in output element
   outputEl.innerHTML = "<p id=name-results>" + newName + "</p>";
-})
+});
