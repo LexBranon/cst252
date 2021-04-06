@@ -10,20 +10,54 @@
 <body>
 			<main id="content">
 				<h1> Lab 14: Javascript Classes and Objects </h1>
-
+<img src = "img/hangman.png">
 				<h2> Challenge </h2>
-					<p>Working with your partner, create a JavaScript constructor.
+					<p>Working with your partner, create an object oriented design.
 					</p>
 				<h2> Problems </h2>
-					<p>My original problem was with lab 10. I was happy to find the problems
-						easily by inspecting. I had a problem figuring out how to fix my
-						addEventListener code at first. But realized it wasnt corresponding
-						to my html correctly.
+					<p>I struggled to get my OOD to deplay in the right formatting. After
+						trying lotd of different solutions, I decided to leave it as one
+						paragraph, but put it in my javascript file in the right formatting.
 					</p>
 				<h2> Results </h2>
-					<p> I was able to unbug my lab 10.
+					<p> I was able to display the output and come up with an object
+						oriented design for hangman.
 					</p>
 			<br>
+			<div id= "output">
+				<h2> Output </h2>
+					<p></p>
+					<br>
+					<p> </p>
+			</div>
+<br>
+<br>
+			<h2> Design an OOP Design for Hangman </h2>
+			<div id = hangman>
+				// Controls the game play
+								class hangman {
+									// initialize
+									constructor(name1, name2) {
+											// set up the board
+											this.board = new Board();
+											// set up the players
+											this.player1 = new Player(name1, 1, this.board);
+											this.player2 = new Player(name2, 2, this.board);
+											// assign the starting player
+											this.current_player = this.player1;
+									}
+									// start play method
+									play() {
+											// loop infinitely
+											while(true) {
+													// call the board rendering method]
+													this.board.render();
+													// ask for coordinates from the current player
+													current_player.get_coordinates();
+								// and so on...
+			</div>
+
+<br>
 			<div class="bottomnav">
 				<a href="js/lab.js" target="source">JavaScript</a>
 				<a href="https://lexbranon.github.io/cst252/">Homepage</a>
