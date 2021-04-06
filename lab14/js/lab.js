@@ -3,18 +3,22 @@
 // Created: March 23, 2021
 // License: Public Domain
 
-function Person(first, last, age) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.school = "Hogwarts";
+function Vehicle(make, model, year, color, extras) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.extras = extras;
+    this.info = function() {
+      return(this.make + " " + this.model + " " + this.year + " " + this.color + " " + this.extras);
+    }
 }
-Person.prototype.language = "English";
-Person.prototype.name = function() {
-        return(this.firstName + " " + this.lastName);
-};
 
+var vehicles =[];
+
+var car = new Vehicle("Chevy", "Spark", 2019, "grey", "small and cute");
 var bike = new Vehicle("Schwinn", "LeToure", 1974, "gold", "Brooks saddle");
 
+
 // we add text (including <p> tags to the end of our output div
-document.getElementById("output").innerHTML += "<p>" + bike.info() + "</p>";
+document.getElementById("output").innerHTML += "<p>" + bike.info() + "</p>" + "<p>" + car.info() + "</p>";
