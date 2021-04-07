@@ -6,7 +6,7 @@ img {
 
 #content img {
     width: 25%;
-    float: none;
+    float: right;
 }
 
 h1 {
@@ -26,12 +26,17 @@ h4 {
   line-height: 0px;
 }
 
-#scriptoutput {
+#output {
   font-family: 'Forum', cursive;
 }
 
-#scriptoutput p {
+#output p {
   font-size: 20px;
+  background-color: #A8B499;
+  color: white;
+  padding: 10px;
+  width: 110px;
+  align: center;
 }
 
 #caption p {
