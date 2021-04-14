@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+
+body {
+    background-color: #fef6e9;
+    display: block;
+    color: black;
+    line-height: 30px;
+}
+
+h1 {
+  font-family: 'Forum', cursive;
+  font-weight: normal;
+  font-size:65px;
+  display: block;
+}
+
+h2 {
+  font-family: 'Forum', cursive;
+  font-weight: normal;
+  display: block;
+  font-size: 45px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+}
