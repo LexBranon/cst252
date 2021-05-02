@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Montserrat&display=swap');
+
+img {
+  margin: 25px;
+}
+
+#content img {
+    width: 25%;
+    float: right;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h4 {
+  margin: 0;
+}
+
+#caption p {
+  font-size: 12px;
+  line-height: 0px;
+}
+
+#output {
+  font-family: 'Forum', cursive;
+  width: 100%;
+}
+
+
+#caption p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#action {
+  background-color: #A8B499;
+  color: white;
+  font-family: Forum, cursive;
+  font-size: 25px;
+  border-color: white;
+
+}
+
+
+.bottomnav {
+  background-color: #A8B499;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  word-spacing: 35px;
+  height: 25px;
+}
+
+.bottomnav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bottomnav a:hover {
+  background-color: #A8B499;
+}
+
+.bottomnav a.active {
+  background-color: #A8B499;
+}
+
+a.buttonlink {
+  color: white;
+  background-color: #A8B499;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.output {
+  float: right;
+}
